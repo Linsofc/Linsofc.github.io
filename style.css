@@ -1,0 +1,161 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+}
+
+:root {
+    --bg: rgb(0, 183, 255);
+    --merah: aqua;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: fixed;
+}
+
+.Navbar-Logo {
+    color: blanchedalmond;
+    font-family: 'Libre Baskerville', serif !important;
+    font-size: 17px;
+    margin-left: 1rem;
+}
+
+.Navbar-Logo span {
+    color: var(--merah);
+}
+
+.Navbar-Nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.Navbar-Nav li {
+    font-weight: bold;
+    color: white;
+    padding: 6px;
+}
+
+.Navbar-Nav li a {
+    color: var(--bg);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Navbar-Nav li a:hover {
+    background-color: var(--bg);
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    border-radius: 2px;
+}
+
+.Navbar-Nav .sc {
+    background-color: var(--bg);
+    color: white;
+    border-radius: 2px;
+}
+
+.Navbar-Nav .sc:hover {
+    color: var(--bg);
+    background-color: rgb(255, 255, 255)
+}
+
+.Konten {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.Welcome {
+    padding-top: 30px;
+}
+
+.Welcome h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255)
+}
+
+.Text-Welcome {
+    text-align: justify;
+    /* text-indent: 10px;  paragraf */
+    padding-left: 20px;
+    padding-right: 20px;
+    color: greenyellow;
+}
+
+.Text-Welcome span {
+    color: red;
+}
+
+.warna {
+    color: aqua;
+}
+
+.Welcome img {
+
+    width: 25%;
+    height: 25%;
+}
+
+.gambar {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a {
+    display: flex;
+    width: 70px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 22%;
+    padding-left: 22%;
+
+}
+
+.sosmed .yt {
+    color: red;
+}
+
+.sosmed .ig {
+    color: rgb(255, 81, 0);
+}
+
+.sosmed .wa {
+    color: green;
+}
+
+
+.Script p {
+    padding-top: 30px;
+}
