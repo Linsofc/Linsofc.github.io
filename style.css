@@ -1,165 +1,153 @@
-*,
 html,
+*,
 body {
-    margin: 0;
     padding: 0;
-    text-decoration: none;
-    font-family: 'Exo 2', sans-serif;
-}
-
-:root {
-    --bg: rgb(0, 183, 255);
-    --merah: aqua;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    position: fixed;
-}
-
-.Navbar-Logo {
-    color: blanchedalmond;
-    font-family: 'Libre Baskerville', serif !important;
-    font-size: 17px;
-    margin-left: 6px;
-}
-
-.Navbar-Logo span {
-    color: var(--merah);
-}
-
-.Navbar-Nav {
-    display: flex;
-    list-style-type: none;
-}
-
-.Navbar-Nav li {
-    font-weight: bold;
-    color: white;
-    padding: 6px;
-}
-
-.Navbar-Nav li a {
-    color: var(--bg);
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-.Navbar-Nav li a:hover {
-    background-color: var(--bg);
-    padding-left: 3px;
-    padding-right: 3px;
-    color: white;
-    border-radius: 2px;
-}
-
-.Navbar-Nav .sc {
-    background-color: var(--bg);
-    color: white;
-    border-radius: 2px;
-}
-
-.Navbar-Nav .sc:hover {
-    color: var(--bg);
-    background-color: rgb(255, 255, 255)
-}
-
-.Konten {
+    margin: 0;
     background-color: black;
-    height: 100vh;
+    color: white;
+}
+
+.container .Navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
     width: 100%;
-}
-
-.Welcome {
-    padding-top: 45px;
-}
-
-.Welcome h1 {
-    display: flex;
+    background-color: yellow;
     justify-content: center;
     align-items: center;
-    font-family: 'Libre Baskerville', serif;
+}
+
+.container .Navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: yellow;
     font-size: 15px;
-    color: rgb(255, 255, 255)
 }
 
-.Text-Welcome {
-    text-align: justify;
-    /* text-indent: 10px;  paragraf*/
-    padding-left: 20px;
-    /* kiri kanan*/
-    padding-right: 20px;
-    color: greenyellow;
+.container .primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.Text-Welcome span {
+.container .primary span {
     color: red;
 }
 
-.warna {
-    color: aqua;
-}
-
-.Welcome img {
-
-    width: 25%;
-    height: 25%;
-}
-
-.gambar {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.button a {
-    display: flex;
-    width: 70px;
-    height: 15px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 10px;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
+.container .primary .merah {
     background-color: red;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+    color: white;
 }
 
-.sosmed {
-    display: flex;
-    justify-content: space-between;
+.container .primary .kuning {
+    background-color: yellow;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+    color: black;
+}
+
+.container .primary .biru {
+    background-color: blue;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.container .primary .p {
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 25px;
+    justify-content: center;
     align-items: center;
-    padding-right: 22%;
-    padding-left: 22%;
-
-}
-
-.sosmed .yt {
-    color: red;
-}
-
-.sosmed .ig {
-    color: rgb(255, 81, 0);
-}
-
-.sosmed .wa {
-    color: green;
-}
-
-
-.Script p {
-    padding-top: 40px;
+    text-align: justify;
     padding-left: 20px;
-    /* kiri kanan*/
     padding-right: 20px;
+}
+
+
+/* SCRIPT BOT */
+.wrapper {
+    display: flex;
+    /* background-color: rgb(255, 255, 255); */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    flex-wrap: wrap;
+}
+
+.card h1 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: blue;
+    /* color: black; */
+}
+
+.card p {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: blue;
+    /* color: black; */
+}
+
+.card a {
+    text-decoration: none;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card a:hover {
+    text-decoration: none;
+    background-color: rgb(145, 255, 0);
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+
+/* Phone Respon */
+@media only screen and (max-width: 400px) {
+
+    .container .Navbar a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        padding: 7px 14px;
+        background-color: yellow;
+        font-size: 15px;
+    }
+
+    .container .primary h1 {
+        font-size: 25px;
+        padding-top: 120px;
+    }
+
+    .container .primary .p {
+        display: inline-block;
+        padding-top: 1px;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
