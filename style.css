@@ -65,8 +65,8 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
-  width: 400px;
-  height: 200px;
+  width: 380px;
+  height: 170px;
   border-radius: 15px;
   background-color: red;
   cursor: pointer;
@@ -93,7 +93,7 @@ body {
 .primary .card a p {
   color: var(--teks);
   font-style: inherit;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   padding-left: 10px;
 }
