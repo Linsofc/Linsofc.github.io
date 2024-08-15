@@ -1,153 +1,119 @@
-html,
-*,
 body {
-    padding: 0;
-    margin: 0;
-    background-color: black;
-    color: white;
+  font-family: var(--judul);
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
 }
 
-.container .Navbar {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: yellow;
-    justify-content: center;
-    align-items: center;
+:root {
+  --teknik: #060d72;
+  --judul: "Archivo Black", sans-serif;
+  --isi: "News Cycle", sans-serif;
+  --teks: #d3d3d3;
+  --bgcard: rgb(187, 255, 0);
 }
 
-.container .Navbar a {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    background-color: yellow;
-    font-size: 15px;
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: var(--teknik);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.container .primary {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.container h1 {
+  font-family: var(--judul);
+  color: #d3d3d3;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.container h1 span {
+  color: rgb(187, 255, 0);
 }
 
-.container .primary span {
-    color: red;
+/* .info h1 {
+  font-family: var(--judul);
+  color: #d3d3d3;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.info h1 span {
+  color: rgb(187, 255, 0);
+} */
+.info p {
+  color: var(--teks);
+  font-style: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
 }
 
-.container .primary .merah {
-    background-color: red;
-    padding-right: 5px;
-    padding-left: 5px;
-    border-radius: 10px;
-    color: white;
+.info p span {
+  color: rgb(187, 255, 0);
 }
 
-.container .primary .kuning {
-    background-color: yellow;
-    padding-right: 5px;
-    padding-left: 5px;
-    border-radius: 10px;
-    color: black;
+/* START */
+
+.primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.container .primary .biru {
-    background-color: blue;
-    padding-right: 5px;
-    padding-left: 5px;
-    border-radius: 10px;
-    color: white;
+.primary .card {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: red;
+  cursor: pointer;
+  margin: 10px;
+  transition: 400ms;
+}
+.primary .card:hover {
+  filter: grayscale(1);
+  transform: scale(1.03);
+}
+.primary .card img {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border: 2px solid #ff3d0036;
+  border-radius: 13px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 400ms;
 }
 
-.container .primary .p {
-    display: inline-block;
-    padding-top: 5px;
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
+.primary .card p {
+  color: var(--teks);
+  font-style: inherit;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
 }
 
-
-/* SCRIPT BOT */
-.wrapper {
-    display: flex;
-    /* background-color: rgb(255, 255, 255); */
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    display: flex;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-    flex-wrap: wrap;
-}
-
-.card h1 {
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    background-color: blue;
-    /* color: black; */
-}
-
-.card p {
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    background-color: blue;
-    /* color: black; */
-}
-
-.card a {
-    text-decoration: none;
-    background-color: red;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.card a:hover {
-    text-decoration: none;
-    background-color: rgb(145, 255, 0);
-    padding: 10px;
-    border-radius: 10px;
-    color: black;
-}
-
-
-/* Phone Respon */
-@media only screen and (max-width: 400px) {
-
-    .container .Navbar a {
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        padding: 7px 14px;
-        background-color: yellow;
-        font-size: 15px;
-    }
-
-    .container .primary h1 {
-        font-size: 25px;
-        padding-top: 70px;
-    }
-
-    .container .primary .p {
-        display: inline-block;
-        padding-top: 1px;
-        font-size: 15px;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+.primary .card p span {
+  color: var(--bgcard);
 }
