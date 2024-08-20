@@ -9,7 +9,7 @@ I'm Lins Official, a passionate content creator on YouTube. I love sharing my kn
 ## Connect with Me
 
 * **YouTube:** [https://youtube.com/@LinsOfficiall](https://youtube.com/@LinsOfficiall)
-* **Instagram:** [https://instagram.com/@rijalsavior](https://instagram.com/@rijalsavior)
+* **Instagram:** [ig](https://www.instagram.com/rijalsavior?igsh=MjNneTZsbzZuY29w)
 
 
 ## Projects
