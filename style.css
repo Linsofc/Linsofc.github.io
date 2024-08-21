@@ -113,7 +113,7 @@ body {
 .primary .card h4 {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
-  margin-top: 0px;
+  margin-top: 7px;
   color: white;
   text-align: center;
   padding-left: 10px;
