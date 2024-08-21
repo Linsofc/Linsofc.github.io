@@ -1,16 +1,15 @@
 # Lins Official
 
-👋  Welcome to my GitHub profile!
+👋 Welcome to my GitHub profile!
 
 ## About Me
 
-I'm Lins Official, a passionate content creator on YouTube. I love sharing my knowledge and experiences with the world. 
+I'm Lins Official, a passionate content creator on YouTube. I love sharing my knowledge and experiences with the world.
 
 ## Connect with Me
 
-* [**YouTube**](https://youtube.com/@LinsOfficiall)
-* [**Instagram**](https://www.instagram.com/rijalsavior?igsh=MjNneTZsbzZuY29w)
-
+- [**YouTube**](https://youtube.com/@LinsOfficiall)
+- [**Instagram**](https://www.instagram.com/rijalsavior?igsh=MjNneTZsbzZuY29w)
 
 ## Projects
 
