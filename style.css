@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.navbar a {
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+  background-color: #555;
+}
+.sticky-search {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  background-color: #f9f9f9;
+  z-index: 999;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.search-container input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+section {
+  padding: 100px 20px;
+  margin-top: 80px;
+}
+#home {
+  background-color: #e3f2fd;
+  text-align: center;
+}
+#shop {
+  background-color: #dcf8e2;
+}
+
+#script-bot {
+  background-color: #f5e3c3;
+}
+#contact {
+  background-color: #ede7f6;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.product,
+.script {
+  background-color: white;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.product:hover,
+.script:hover {
+  transform: scale(1.05);
+}
+.product img,
+.script img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.product h2,
+.script h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+.product p,
+.script p {
+  font-size: 14px;
+  color: #777;
+}
+.product .price {
+  font-size: 16px;
+  color: #e91e63;
+  font-weight: bold;
+}
+.product .buy-btn,
+.script a {
+  background-color: #25d366; /* WhatsApp color */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+.product .buy-btn:hover {
+  background-color: #128c7e; /* Darker WhatsApp green */
+}
+.script a {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.script a:hover {
+  background-color: #0056b3;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.contact-item img {
+  width: 20px;
+  margin-right: 15px;
+}
+.contact-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+.contact-item a:hover {
+  color: #0e52e4;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  position: relative;
+}
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
