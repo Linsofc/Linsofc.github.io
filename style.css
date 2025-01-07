@@ -10,11 +10,38 @@ body {
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #333;
   z-index: 1000;
+  padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.navbar .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navbar .navbar-name {
+  color: rgb(209, 209, 209);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  padding-right: 30px;
+}
+
 .navbar a {
   padding: 15px 20px;
   color: white;
@@ -22,12 +49,23 @@ body {
   text-align: center;
   transition: background-color 0.3s ease;
 }
+
 .navbar a:hover {
   background-color: #555;
 }
+
+/* Hamburger menu icon */
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  padding-right: 30px;
+  color: white;
+  cursor: pointer;
+}
+
 .sticky-search {
   position: fixed;
-  top: 50px;
+  top: 68px;
   width: 100%;
   background-color: #f9f9f9;
   z-index: 999;
@@ -110,7 +148,7 @@ section {
 }
 .product .buy-btn,
 .script a {
-  background-color: #25d366; /* WhatsApp color */
+  background-color: #25d366; 
   color: white;
   padding: 10px;
   text-align: center;
@@ -121,7 +159,7 @@ section {
   margin-top: 10px;
 }
 .product .buy-btn:hover {
-  background-color: #128c7e; /* Darker WhatsApp green */
+  background-color: #128c7e; 
 }
 .script a {
   display: block;
@@ -156,7 +194,18 @@ section {
   text-align: center;
   padding: 15px;
 }
-/* Modal */
+
+.navbar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -176,6 +225,93 @@ section {
   max-width: 90%;
   max-height: 90%;
 }
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none; 
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(51, 51, 51, 0.5);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 1001;
+  }
+
+  .navbar-links a {
+    padding: 15px;
+    border-top: 1px solid rgba(85, 85, 85, 0.5);
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  .navbar-links.active {
+    display: block; 
+  }
+
+  .navbar-overlay.active {
+    display: block; 
+  }
+
+  .hamburger-menu {
+    display: block; 
+  }
+  .sticky-search {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    background-color: #f9f9f9;
+    z-index: 999;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
 .modal-close {
   position: absolute;
   top: 10px;

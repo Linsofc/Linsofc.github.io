@@ -3,11 +3,9 @@ const productContainer = document.getElementById("productContainer");
 const products = Array.from(document.getElementsByClassName("product"));
 const scripts = Array.from(document.getElementsByClassName("script"));
 
-// Fungsi untuk filter produk dan script secara real-time
 searchInput.addEventListener("input", function () {
   const query = searchInput.value.toLowerCase();
 
-  // Filter produk
   products.forEach((product) => {
     const title = product.querySelector("h2").textContent.toLowerCase();
     if (title.includes(query)) {
@@ -17,7 +15,6 @@ searchInput.addEventListener("input", function () {
     }
   });
 
-  // Filter script bot
   scripts.forEach((script) => {
     const title = script.querySelector("h2").textContent.toLowerCase();
     if (title.includes(query)) {
@@ -28,7 +25,6 @@ searchInput.addEventListener("input", function () {
   });
 });
 
-// Modal functionality
 function openModal(imageElement) {
   const modal = document.getElementById("imageModal");
   const modalImage = document.getElementById("modalImage");
@@ -39,8 +35,23 @@ function openModal(imageElement) {
 function closeModal(event) {
   if (
     event.target.id === "imageModal" ||
-    event.target.classList.contains("close-btn")
+    event.target.classList.contains("modal-close")
   ) {
     document.getElementById("imageModal").style.display = "none";
   }
 }
+
+function toggleMenu() {
+  const navbarLinks = document.getElementById("navbarLinks");
+  const navbarOverlay = document.getElementById("navbarOverlay");
+  navbarLinks.classList.toggle("active"); 
+  navbarOverlay.classList.toggle("active"); 
+}
+
+function closeMenu() {
+  const navbarLinks = document.getElementById("navbarLinks");
+  const navbarOverlay = document.getElementById("navbarOverlay");
+  navbarLinks.classList.remove("active"); 
+  navbarOverlay.classList.remove("active"); 
+}
+

@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#script-bot">Script</a>
-      <a href="#contact">Contact</a>
+    <div class="navbar" id="navbarOverlay">
+      <div class="logo-container">
+        <img src="https://virtual-dimension.xyz/apis/uploads/yfvyuOecdUUuAAp.jpg" alt="Logo" class="logo" />
+        <span class="navbar-name">Lins Official</span>
+      </div>
+    
+      <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    
+      <div class="navbar-links" id="navbarLinks">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#script-bot">Script</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
 
     <div class="sticky-search">
@@ -96,7 +105,9 @@
           <a href="https://moneyblink.com/9AfAa2EO" target="_blank"
             >Download Script</a
           >
-          <a href="https://youtu.be/2nAcVP-S63w?si=0RmPOzVAs2oqU5pR" target="_blank"
+          <a
+            href="https://youtu.be/2nAcVP-S63w?si=0RmPOzVAs2oqU5pR"
+            target="_blank"
             >Tutorial</a
           >
         </div>
@@ -111,7 +122,9 @@
           <a href=" https://moneyblink.com/xCKGODNMks" target="_blank"
             >Download Script</a
           >
-          <a href="https://youtu.be/o8OyMuyypCA?si=T9guEHgYx1vDUoXb" target="_blank"
+          <a
+            href="https://youtu.be/o8OyMuyypCA?si=T9guEHgYx1vDUoXb"
+            target="_blank"
             >Tutorial</a
           >
         </div>
@@ -126,7 +139,9 @@
           <a href="https://moneyblink.com/aUpy6" target="_blank"
             >Download Script</a
           >
-          <a href="https://youtu.be/2Hml4QDrgwk?si=9QStSQTHu4oQOpx6" target="_blank"
+          <a
+            href="https://youtu.be/2Hml4QDrgwk?si=9QStSQTHu4oQOpx6"
+            target="_blank"
             >Tutorial</a
           >
         </div>
@@ -143,6 +158,16 @@
         />
         <a href="https://wa.me/6285190090045" target="_blank"
           >+62 851-9009-0045</a
+        >
+      </div>
+
+      <div class="contact-item">
+        <img
+          src="https://img.icons8.com/ios-filled/50/000000/whatsapp.png"
+          alt="WhatsApp"
+        />
+        <a href="https://whatsapp.com/channel/0029VaeQHirJ93waiykxjF2L" target="_blank"
+          >Saluran WhatsApp (Informations)</a
         >
       </div>
 
@@ -179,9 +204,8 @@
       <p>&copy; 2025 Lins Official. All rights reserved.</p>
     </div>
 
-    <!-- Modal -->
     <div id="imageModal" class="modal" onclick="closeModal(event)">
-      <span class="close-btn" onclick="closeModal(event)">&times;</span>
+      <span class="modal-close" onclick="closeModal(event)">&times;</span>
       <img id="modalImage" src="" alt="Full-size image" />
     </div>
 
