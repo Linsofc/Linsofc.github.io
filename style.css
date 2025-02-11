@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background: linear-gradient(135deg, #2e3036, #706d74);
   z-index: 1000;
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -31,9 +31,10 @@ body {
 }
 
 .navbar .navbar-name {
-  color: rgb(209, 209, 209);
+  color: rgb(240, 235, 235);
   font-size: 15px;
   font-weight: bold;
+  font-family: "Dancing Script", cursive;
 }
 
 .navbar-links {
@@ -51,7 +52,8 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #555;
+  background: linear-gradient(135deg, #3e4046, #5f5e61);
+  border-radius: 12px;
 }
 
 /* Hamburger menu icon */
@@ -70,7 +72,7 @@ body {
   z-index: 999;
   padding: 10px 0;
   background-color: rgba(223, 223, 223, 0.5);
-    box-shadow: 0 2px 5px rgba(179, 178, 178, 0.1);
+  box-shadow: 0 2px 5px rgba(179, 178, 178, 0.1);
 }
 .search-container {
   max-width: 600px;
@@ -86,22 +88,36 @@ body {
 }
 section {
   padding: 100px 20px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 #home {
-  background-color: #e3f2fd;
+  background: linear-gradient(135deg, #3c95e9, #2c7486);
+  color: white;
   text-align: center;
-}
-#shop {
-  background-color: #dcf8e2;
+  padding: 150px 20px;
 }
 
-#script-bot {
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+#home p {
+  font-size: 1.2rem;
+}
+#shop h1,
+#script-bot h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* #script-bot {
   background-color: #f5e3c3;
-}
-#contact {
-  background-color: #ede7f6;
-}
+} */
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -148,7 +164,7 @@ section {
 }
 .product .buy-btn,
 .script a {
-  background-color: #25d366; 
+  background-color: #25d366;
   color: white;
   padding: 10px;
   text-align: center;
@@ -159,7 +175,7 @@ section {
   margin-top: 10px;
 }
 .product .buy-btn:hover {
-  background-color: #128c7e; 
+  background-color: #128c7e;
 }
 .script a {
   display: block;
@@ -172,27 +188,44 @@ section {
 .script a:hover {
   background-color: #0056b3;
 }
+#contact {
+  background: linear-gradient(135deg, #2e3036, #706d74);
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+}
 .contact-item {
   display: flex;
   align-items: center;
-  margin: 15px 0;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+.contact-item:hover {
+  transform: scale(1.03);
 }
 .contact-item img {
-  width: 20px;
-  margin-right: 15px;
+  width: 28px;
+  margin-right: 12px;
 }
 .contact-item a {
   text-decoration: none;
-  color: #007bff;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
 .contact-item a:hover {
-  color: #0e52e4;
+  color: #3bc1ff;
 }
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.8;
 }
 
 .navbar-overlay {
@@ -277,12 +310,10 @@ section {
   color: white;
   cursor: pointer;
 }
-
-
 
 @media screen and (max-width: 768px) {
   .navbar-links {
-    display: none; 
+    display: none;
     width: 100%;
     text-align: center;
     flex-direction: column;
@@ -303,15 +334,15 @@ section {
   }
 
   .navbar-links.active {
-    display: block; 
+    display: block;
   }
 
   .navbar-overlay.active {
-    display: block; 
+    display: block;
   }
 
   .hamburger-menu {
-    display: block; 
+    display: block;
   }
   .sticky-search {
     position: fixed;

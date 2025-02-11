@@ -3,18 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Lins Official - Website</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="navbar" id="navbarOverlay">
       <div class="logo-container">
-        <img src="https://virtual-dimension.xyz/apis/uploads/yfvyuOecdUUuAAp.jpg" alt="Logo" class="logo" />
+        <img
+          src="https://virtual-dimension.xyz/apis/uploads/yfvyuOecdUUuAAp.jpg"
+          alt="Logo"
+          class="logo"
+        />
         <span class="navbar-name">Lins Official</span>
       </div>
-    
+
       <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
-    
+
       <div class="navbar-links" id="navbarLinks">
         <a href="#home">Home</a>
         <a href="#shop">Shop</a>
@@ -25,20 +35,18 @@
 
     <div class="sticky-search">
       <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Cari produk..." />
+        <input type="text" id="searchInput" placeholder="Search product" />
       </div>
     </div>
 
-    <section id="home">
-      <h1>Selamat Datang di Lins Official</h1>
-      <p>
-        Temukan produk dan script bot terbaik untuk kebutuhan Anda! <br />Kami
-        melayani jasa pembuatan bot, topup otomatis, dan lain lain
+    <section id="home" class="animate__animated animate__fadeIn">
+      <h1>Lins Official Store</h1>
+      <p style="text-align: justify;">
+        Halo semuanya perkenalkan nama saya saiful rijal dikenal dengan nama <a href="https://youtube.com/@LinsOfficiall" style="color: rgb(236, 9, 9); text-decoration: none;">Lins Official</a>. Saya suka banget untuk mempelajari hal hal baru yang berkaitan dengan codingan apalagi nodejs. tujuan membuat website ini adalah untuk mempermudah mencari informasi dan product yang saya jual serta sebagai portfolio saya untuk kedepannya. jadi jangan lupa support youtube <a href="https://youtube.com/@LinsOfficiall" style="color: rgb(236, 9, 9); text-decoration: none;">Lins Official</a> agar lebih semangat lagi ngontennya dan agar tidak ketinggalan info menarik dari <a href="https://youtube.com/@LinsOfficiall" style="color: rgb(236, 9, 9); text-decoration: none;">Lins Official</a>. Terima Kasih Semuanya
       </p>
     </section>
-
     <section id="shop">
-      <h2>Mari Belanja...</h2>
+      <h1>Shop Lins Official</h1>
       <div class="main-container" id="productContainer">
         <div class="product">
           <img
@@ -47,8 +55,8 @@
             onclick="openModal(this)"
           />
           <h2>Script Bot Bug Fc</h2>
-          <p>Tembus all device, wa ios, ori beta, enc 20k no enc 70k</p>
-          <p class="price">Rp 20.000</p>
+          <p>Tembus all device, wa ios, ori beta, enc 35k no enc 100k</p>
+          <p class="price">Rp 35.000</p>
           <a
             href="https://wa.me/6285190090045?text=linsxcbug Assalamualaikum kak lins%0ASaya mau buy sc bug wa"
             class="buy-btn"
@@ -111,7 +119,9 @@
             onclick="openModal(this)"
           />
           <h2>Jasa Integrasi API</h2>
-          <p>Integrasikan bot anda ke website agar lebih interaktif dan menarik!</p>
+          <p>
+            Integrasikan bot anda ke website agar lebih interaktif dan menarik!
+          </p>
           <p class="price">Rp 50.000</p>
           <a
             href="https://wa.me/6285190090045?text=Assalamualaikum kak lins%0ASaya mau beli jasa Integrasi API"
@@ -128,7 +138,7 @@
           />
           <h2>Jasa Install Panel</h2>
           <p>Layanan Instalasi panel cepat dan murah cukup membawa Vps.</p>
-          <p class="price">Rp 20.000</p>
+          <p class="price">Rp 10.000</p>
           <a
             href="https://wa.me/6285190090045?text=Assalamualaikum kak lins%0ASaya mau beli Jasa Install Panel"
             class="buy-btn"
@@ -144,7 +154,7 @@
           />
           <h2>VPS Ubuntu</h2>
           <p>VPS Ubuntu untuk server panel pterodactyle Terima jadi panel.</p>
-          <p class="price">Rp 150.000</p>
+          <p class="price">Rp 70.000</p>
           <a
             href="https://wa.me/6285190090045?text=Assalamualaikum kak lins%0ASaya mau beli VPS untuk buat panel pterodactyle"
             class="buy-btn"
@@ -172,7 +182,7 @@
     </section>
 
     <section id="script-bot">
-      <h2>Script Bot Free!!</h2>
+      <h1>Script Bot Free!!</h1>
       <div class="main-container">
         <div class="script">
           <img
@@ -233,56 +243,63 @@
 
       <div class="contact-item">
         <img
-          src="https://img.icons8.com/ios-filled/50/000000/whatsapp.png"
+          src="https://img.icons8.com/color/50/4CAF50/whatsapp.png"
           alt="WhatsApp"
         />
-        <a href="https://wa.me/6285190090045" target="_blank"
-          >+62 851-9009-0045</a
+        <a href="https://wa.me/6285190090045" target="_blank">WhatsApp</a>
+      </div>
+
+      <div class="contact-item">
+        <img
+          src="https://img.icons8.com/color/50/4CAF50/whatsapp.png"
+          alt="Saluran"
+        />
+        <a
+          href="https://whatsapp.com/channel/0029VaeQHirJ93waiykxjF2L"
+          target="_blank"
+          >Saluran WhatsApp</a
         >
       </div>
 
       <div class="contact-item">
         <img
-          src="https://img.icons8.com/ios-filled/50/000000/whatsapp.png"
-          alt="WhatsApp"
-        />
-        <a href="https://whatsapp.com/channel/0029VaeQHirJ93waiykxjF2L" target="_blank"
-          >Saluran WhatsApp (Informations)</a
-        >
-      </div>
-
-      <div class="contact-item">
-        <img
-          src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"
+          src="https://img.icons8.com/color/50/E4405F/instagram-new.png"
           alt="Instagram"
         />
         <a href="https://instagram.com/rijalsavior" target="_blank"
-          >@rijalsavior</a
+          >Instagram</a
         >
       </div>
 
       <div class="contact-item">
         <img
-          src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png"
+          src="https://img.icons8.com/color/50/FF0000/youtube-play.png"
           alt="YouTube"
         />
         <a href="https://www.youtube.com/@LinsOfficiall" target="_blank"
-          >Lins Official</a
+          >YouTube</a
         >
       </div>
 
       <div class="contact-item">
         <img
-          src="https://img.icons8.com/ios-filled/50/000000/email-open.png"
-          alt="Email"
+          src="https://img.icons8.com/color/50/181717/github.png"
+          alt="GitHub"
         />
-        <a href="mailto:rijalsavior125@gmail.com">rijalsavior125@gmail.com</a>
+        <a href="https://github.com/Linsofc" target="_blank">GitHub</a>
       </div>
-    </section>
 
-    <div class="footer">
-      <p>&copy; 2025 Lins Official. All rights reserved.</p>
-    </div>
+      <div class="contact-item">
+        <img
+          src="https://virtual-dimension.xyz/apis/uploads/tKAo9h3T5seSpM6.jpg"
+          alt="NGL"
+          style="border-radius: 7px"
+        />
+        <a href="https://ngl.link/rijalsavior" target="_blank">NGL</a>
+      </div>
+
+      <p class="copyright">&copy; 2025 Lins Official. All rights reserved.</p>
+    </section>
 
     <div id="imageModal" class="modal" onclick="closeModal(event)">
       <span class="modal-close" onclick="closeModal(event)">&times;</span>
