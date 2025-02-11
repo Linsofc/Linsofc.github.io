@@ -84,11 +84,6 @@ body {
   background: linear-gradient(135deg, #bad2e4, #d3e3e9);
 }
 
-.light-mode .navbar-links {
-  background-color: rgba(231, 227, 227, 0.95);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
 .dark-mode .hamburger-menu {
   color: rgb(0, 0, 0);
 }
@@ -401,5 +396,9 @@ section {
     padding: 10px 0;
     background-color: rgba(223, 223, 223, 0.5);
     box-shadow: 0 2px 5px rgba(179, 178, 178, 0.1);
+  }
+
+  .light-mode .navbar-links {
+    background: linear-gradient(135deg, #c4def0, #daecf3);
   }
 }
