@@ -55,3 +55,35 @@ function closeMenu() {
   navbarOverlay.classList.remove("active"); 
 }
 
+function toggleMode(event) {
+  event.preventDefault(); // Mencegah # dari mengarahkan ke atas
+  
+  const body = document.body;
+  const toggleButton = document.getElementById("toggle-button");
+
+  // Toggle mode
+  const isDarkMode = body.classList.toggle("dark-mode");
+  body.classList.toggle("light-mode", !isDarkMode);
+
+  // Ubah teks tombol
+  toggleButton.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+
+  // Simpan mode ke localStorage
+  localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+}
+
+// Set mode saat halaman dimuat
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+  const body = document.body;
+  const toggleButton = document.getElementById("toggle-button");
+
+  if (savedTheme === "dark") {
+    body.classList.add("dark-mode");
+    toggleButton.textContent = "Light Mode";
+  } else {
+    body.classList.add("light-mode");
+    toggleButton.textContent = "Dark Mode";
+  }
+});
+
