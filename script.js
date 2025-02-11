@@ -56,23 +56,19 @@ function closeMenu() {
 }
 
 function toggleMode(event) {
-  event.preventDefault(); // Mencegah # dari mengarahkan ke atas
+  event.preventDefault(); 
   
   const body = document.body;
   const toggleButton = document.getElementById("toggle-button");
 
-  // Toggle mode
   const isDarkMode = body.classList.toggle("dark-mode");
   body.classList.toggle("light-mode", !isDarkMode);
 
-  // Ubah teks tombol
   toggleButton.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
 
-  // Simpan mode ke localStorage
   localStorage.setItem("theme", isDarkMode ? "dark" : "light");
 }
 
-// Set mode saat halaman dimuat
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
   const body = document.body;
