@@ -237,7 +237,8 @@ header .jumbotron a button:hover {
     /* background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0,0,0,0)), var(--nav); */
     background-color: var(--desc);
     padding-bottom: 50px;
-    border: 1px solid var(--secondary);
+    border-top: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--secondary);
 }
 
 #free h3 {
@@ -543,5 +544,65 @@ footer p {
 
     #free .card a {
         padding: 10px 35px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    header .jumbotron a button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    #shop > p {
+        padding: 0px 20px;
+    }
+
+    #shop > h3 {
+        font-size: 1.5em;
+    }
+
+    #free h3 {
+        font-size: 1.5em;
+    }
+
+    #free > p {
+        padding: 0px 20px;
+        font-size: 0.7em;
+    }
+
+    #free .card a {
+        padding: 5px 15px;
+    }
+
+    .contact-info p, .contact-info li {
+        font-size: 0.7em;
+    }
+
+    .contact-info li a {
+        font-size: 1em;
+    }
+
+    .contact-form {
+        margin-top: -50px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px 10px;
+        border: 1px solid var(--secondary);
+        border-radius: 8px;
+        font-size: 0.6em;
+        transition: 0.2s ease-in-out;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        font-size: 0.7em;
+    }
+
+    footer {
+        font-size: 0.5em;
     }
 }
